@@ -2,7 +2,7 @@ import React from 'react';
 
 function Header() {
   return (
-    <header className="bg-dark text-white text-center py-5">
+    <header className="bg-dark text-white text-center py-5 hero-section">
       <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div className="container">
           <a className="navbar-brand" href="/">Ronak Kotadiya</a>
@@ -10,7 +10,7 @@ function Header() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ml-auto">
+            <ul className="navbar-nav me-auto">
               <li className="nav-item">
                 <a className="nav-link" href="#about">About</a>
               </li>
@@ -24,6 +24,9 @@ function Header() {
                 <a className="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
+            <span className="navbar-text text-white-50 ml-auto">
+              <a href="mailto:rgkotadiya17@gmail.com" className="text-white-50">rgkotadiya17@gmail.com</a>
+            </span>
           </div>
         </div>
       </nav>

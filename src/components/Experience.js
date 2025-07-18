@@ -14,9 +14,9 @@ function Experience() {
     <section id="experience" className="py-5 bg-light">
       <div className="container">
         <h2 className="text-center mb-5">Work Experience</h2>
-        <div className="row">
+        <div className="row justify-content-center">
           {experiences.map((exp, index) => (
-            <div className="col-md-6 mb-4" key={index}>
+            <div className="col-lg-8 mx-auto mb-4" key={index}>
               <div className="card h-100">
                 <div className="card-body">
                   <h5 className="card-title">{exp.role}</h5>

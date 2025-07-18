@@ -8,6 +8,11 @@ function Projects() {
       tools: 'Power BI',
     },
     {
+      title: 'Tableau Data Storytelling Dashboard',
+      description: 'Developed an effective and convincing dashboard using Tableau, starting from raw data that required extensive cleaning. Created diverse visualizations to present actionable insights to clients.',
+      tools: 'Tableau, Data Cleaning',
+    },
+    {
       title: 'Fixnest.com',
       description: 'A website for property selling and renting, developed as a final year project.',
       tools: 'PHP, HTML, CSS, JavaScript',
@@ -28,7 +33,6 @@ function Projects() {
                   <p className="card-text">
                     <small className="text-muted">{project.tools}</small>
                   </p>
-                  <a href="#!" className="btn btn-primary badge-pill">View Project</a>
                 </div>
               </div>
             </div>

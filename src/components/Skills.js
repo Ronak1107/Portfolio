@@ -2,8 +2,8 @@ import React from 'react';
 
 function Skills() {
   const coreTools = ['SQL', 'Power BI', 'Tableau', 'Excel'];
-  const pythonLibraries = ['Python', 'Pandas', 'NumPy', 'Scikit-learn', 'Matplotlib'];
-  const cybersecuritySkills = ['Network Security', 'Penetration Testing', 'Threat Hunting', 'Vulnerability Management'];
+  const programmingSkills = ['Python', 'HTML', 'CSS', 'JavaScript', 'PHP'];
+  const cybersecuritySkills = ['Network Security', 'Threat Hunting', 'Vulnerability Management'];
   const badgeColors = ['primary', 'success', 'danger', 'dark', 'info', 'warning', 'secondary'];
   const textColor = '#000000'; // Black color for all skill text
 
@@ -19,16 +19,16 @@ function Skills() {
                 <span key={skill} className={`badge badge-${badgeColors[index % badgeColors.length]} badge-pill mr-2 mb-2 p-3`} style={{ color: textColor }}>{skill}</span>
               ))}
             </div>
-            {/* Second Row: Python Libraries */}
+            {/* Second Row: Programming Skills */}
             <div className="mb-4">
-              {pythonLibraries.map((skill, index) => (
+              {programmingSkills.map((skill, index) => (
                 <span key={skill} className={`badge badge-${badgeColors[(index + coreTools.length) % badgeColors.length]} badge-pill mr-2 mb-2 p-3`} style={{ color: textColor }}>{skill}</span>
               ))}
             </div>
             {/* Third Row: Cybersecurity Skills */}
             <div>
               {cybersecuritySkills.map((skill, index) => (
-                <span key={skill} className={`badge badge-${badgeColors[(index + coreTools.length + pythonLibraries.length) % badgeColors.length]} badge-pill mr-2 mb-2 p-3`} style={{ color: textColor }}>{skill}</span>
+                <span key={skill} className={`badge badge-${badgeColors[(index + coreTools.length + programmingSkills.length) % badgeColors.length]} badge-pill mr-2 mb-2 p-3`} style={{ color: textColor }}>{skill}</span>
               ))}
             </div>
           </div>
